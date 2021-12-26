@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* From here */
+
+main {
+  height: 90vh;
+}
+/* Footer */
+footer {
+  font-weight: 500;
+}
