@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Col, Row, Image, Card, Button, ListGroup } from 'react-bootstrap';
+import { Col, Row, Image, ListGroup } from 'react-bootstrap';
 import products from '../../products';
 
 const ProductScreen = ({ match }) => {
@@ -16,7 +16,7 @@ const ProductScreen = ({ match }) => {
           <Image src={product.image} alt={product.name} fluid />
         </Col>
         <Col md={3}>
-          <ListGroup variant='flush'>
+          <ListGroup style={{ fontWeight: '450' }} variant='flush'>
             <ListGroup.Item>
               <h3>{product.name}</h3>
             </ListGroup.Item>

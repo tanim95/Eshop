@@ -1,0 +1,26 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "this is an ecommerce website usuing MERN",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanim95/Eshop.git"
+  },
+  "author": "tanim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanim95/Eshop/issues"
+  },
+  "homepage": "https://github.com/tanim95/Eshop#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.15"
+  }
+}
