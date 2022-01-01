@@ -2,9 +2,11 @@
   "name": "eshop",
   "version": "1.0.0",
   "description": "this is an ecommerce website usuing MERN",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,9 @@
   },
   "homepage": "https://github.com/tanim95/Eshop#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4"
   },
   "devDependencies": {
     "concurrently": "^6.5.1",

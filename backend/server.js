@@ -1,7 +1,12 @@
-const express = require('express');
-const products = require('./data/products');
+import express from 'express';
+import dotenv from 'dotenv';
+import products from './data/products.js';
+import connectDB from './config/db.js';
 
+dotenv.config();
 const app = express();
+connectDB();
+
 const port = process.env.PORT || 5000;
 const www = process.env.WWW || '/';
 app.use(express.static(www));
@@ -18,4 +23,8 @@ app.get('/api/products/:id', (req, res) => {
   res.json(product);
 });
 
-app.listen(port, () => console.log(`listening on http://localhost:${port}`));
+app.listen(port, () =>
+  console.log(
+    `sever running in ${process.env.NODE_ENV} mode on http://localhost:${port}`
+  )
+);
