@@ -14,6 +14,10 @@ const productSchema = mongoose.Schema({
     required: true,
     ref: 'User',
   },
+  name: {
+    type: String,
+    required: true,
+  },
   image: {
     type: String,
     required: true,
@@ -22,7 +26,7 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  catagory: {
+  category: {
     type: String,
     required: true,
   },
@@ -50,5 +54,5 @@ const productSchema = mongoose.Schema({
     default: 0,
   },
 });
-const Product = mongoose.Model('Product', productSchema);
+const Product = mongoose.model('Product', productSchema);
 export default Product;

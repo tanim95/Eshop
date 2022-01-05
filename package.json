@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "data:import": "node backend/seeder",
+    "data:remove": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/tanim95/Eshop#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.4"
