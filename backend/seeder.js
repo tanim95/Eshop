@@ -44,8 +44,5 @@ const removeData = async () => {
   }
 };
 
-if (argv[2] === '-d') {
-  removeData();
-} else {
-  importData();
-}
+if (argv[2] === '-i') importData();
+if (argv[2] === '-d') removeData();
