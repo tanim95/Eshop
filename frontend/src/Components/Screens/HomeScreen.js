@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../Product';
-import Loader from '../Loader';
-import Message from '../Message';
+// import Loader from '../Loader';
+// import Message from '../Message';
 import { productList } from '../../actions/productAction';
 import { useDispatch, useSelector } from 'react-redux';
 
 const HomeScreens = () => {
   const dispatch = useDispatch();
   const productLists = useSelector((state) => state.productList);
-  const { products, loading, error } = productLists;
+  const { products } = productLists;
   useEffect(() => {
     dispatch(productList());
   }, [dispatch]);
